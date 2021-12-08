@@ -20,21 +20,6 @@
                     <th>Last Name</th>
                     <th>Age</th>
                 </tr>
-                <tr>
-                    <td>A1</td>
-                    <td>B1</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>A3</td>
-                    <td>B3</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>A2</td>
-                    <td>B2</td>
-                    <td>20</td>
-                </tr>
             </table>
         </div>
         <div class="tab tab-2">
@@ -43,8 +28,6 @@
             Age :<input type="number" name="age" id="age">
             
             <button onclick="addHtmlTableRow();">Add</button>
-            <!-- <button onclick="editHtmlTbleSelectedRow();">Edit</button>
-            <button onclick="removeSelectedRow();">Remove</button> -->
         </div>
     </div>
     
@@ -116,27 +99,7 @@
             }
         }
         selectedRowToInput();
-        
-        // function editHtmlTbleSelectedRow()
-        // {
-        //     var fname = document.getElementById("fname").value,
-        //         lname = document.getElementById("lname").value,
-        //         age = document.getElementById("age").value;
-        //    if(!checkEmptyInput()){
-        //     table.rows[rIndex].cells[0].innerHTML = fname;
-        //     table.rows[rIndex].cells[1].innerHTML = lname;
-        //     table.rows[rIndex].cells[2].innerHTML = age;
-        //   }
-        // }
-        
-        // function removeSelectedRow()
-        // {
-        //     table.deleteRow(rIndex);
-        //     // clear input text
-        //     document.getElementById("fname").value = "";
-        //     document.getElementById("lname").value = "";
-        //     document.getElementById("age").value = "";
-        // }
+    
     </script>
     
 </body>
