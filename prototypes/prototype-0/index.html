@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -53,41 +52,54 @@
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-book me-1"></i>
-                                
                                 <form class="row g-3">
                                     <div class="col-md-6">
-                                      <label for="inputEmail4" class="form-label">title</label>
+                                      <label for="inputEmail4" class="form-label">Titre</label>
                                       <input type="email" class="form-control" id="inputEmail4">
                                     </div>
                                     <div class="col-md-6">
-                                      <label for="inputPassword4" class="form-label">author</label>
-                                      <input type="password" class="form-control" id="inputPassword4">
+                                      <label for="inputPassword4" class="form-label">Author</label>
+                                      <input type="text" class="form-control" id="inputPassword4">
                                     </div>
-                                    <div class="col-12">
-                                      <label for="inputAddress" class="form-label">price</label>
-                                      <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                    <div class="col-8">
+                                      <label for="inputAddress" class="form-label">Prix$</label>
+                                      <input type="number" class="form-control" id="inputAddress" placeholder="">
                                     </div>
-                                    <div class="col-12">
-                                      <label for="inputAddress2" class="form-label">publication date</label>
-                                      <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                                    <div class="col-md-8">
+                                      <label for="inputAddress2" class="form-label">Date de Publication</label>
+                                      <input type="date" class="form-control" id="inputAddress2" placeholder="">
 
                                     <div class="col-md-4">
-                                      <label for="inputState" class="form-label">language</label>
+                                      <label for="inputState" class="form-label">Langue</label>
                                       <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
+                                        <option selected>Choisir...</option>
                                         <option>Ar</option>
                                         <option>En</option>
                                         <option>Fr</option>
                                       </select>
                                     </div>
-                                    <div class="col-md-2">
-                                      <label for="inputZip" class="form-label">type</label>
-                                      <select id="inputState" class="form-select">
-                                        <option selected>Choose...</option>
-                                        <option>Roman</option>
-                                        <option>Essai</option>
-                                        <option>Comic Strip</option>
-                                      </select>
+                                    <div class="col-12">
+                                        <label for="workType" class="form-label">Type</label>
+                                        <div>
+                                            <input value="Roman" name="workType" type="radio" id="gridCheck">
+                                            <label for="gridCheck">
+                                                Roman
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input value="Essai" name="workType" type="radio" id="gridCheck">
+                                            <label  for="gridCheck">
+                                                Essai
+                                            </label>
+                                        </div>
+    
+                                        <div>
+                                            <input  name="workType" value="Bande-Dessinée" type="radio" id="gridCheck">
+                                            <label  for="gridCheck">
+                                                Bande-Dessinée
+                                            </label>
+                                        </div>
+    
                                     </div>
                                     <div class="col-12">
                                       <div class="form-check">
@@ -98,7 +110,7 @@
                                       </div>
                                     </div>
                                     <div class="col-12">
-                                      <button type="submit" class="btn btn-success">+ add</button>
+                                      <button type="submit" class="btn btn-success">+ Ajouter</button>
                                     </div>
                                   </form>
                             </div>
@@ -117,8 +129,10 @@
                                         <tr>
                                             <th>Titre</th>
                                             <th>Auteur</th>
-                                            <th>Prix</th>
-                                            <th>Date de sortie </th>
+                                            <th>Prix$</th>
+                                            <th>Date de Publication</th>
+                                            <th>langue</th>
+                                            <th>type</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -130,40 +144,49 @@
                                             <td>Auteur 1</td>
                                             <td>100</td>
                                             <td>01/02/1999</td>
-                                            <th>
+                                            <td>English</td>
+                                            <td>Roman</td>
+                                            <td>
                                                 <button class="btn btn-info">Modifier </button>
                                                 <button class="btn btn-danger">Supprimer</button>
-                                            </th>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Livre 2</td>
                                             <td>Auteur 2</td>
                                             <td>200</td>
                                             <td>01/02/1999</td>
-                                            <th>
-                                                <button class="btn btn-info">Modifier</button>
+                                            <td>English</td>
+                                            <td>Roman</td>
+                                            <td>
+                                                <button class="btn btn-info">Modifier </button>
                                                 <button class="btn btn-danger">Supprimer</button>
-                                            </th>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Livre 3</td>
                                             <td>Auteur 2</td>
                                             <td>200</td>
                                             <td>01/02/1999</td>
-                                            <th>
-                                                <button class="btn btn-info">Modifier</button>
+                                            <td>English</td>
+                                            <td>Roman</td>
+                                            <td>
+                                                <button class="btn btn-info">Modifier </button>
                                                 <button class="btn btn-danger">Supprimer</button>
-                                            </th>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Livre 4</td>
                                             <td>Auteur 2</td>
                                             <td>200</td>
                                             <td>01/02/1999</td>
-                                            <th>
-                                                <button class="btn btn-info">Modifier</button>
+                                            <td>English</td>
+                                            <td>Roman</td>
+                                            <td>
+                                                <button class="btn btn-info">Modifier </button>
                                                 <button class="btn btn-danger">Supprimer</button>
-                                            </th>
+                                            </td>
+
                                         </tr>
                                         
                                     </tbody>
@@ -186,9 +209,5 @@
                 </footer>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables-simple-demo.js"></script>
     </body>
 </html>
