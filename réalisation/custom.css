@@ -6,3 +6,12 @@
 
     display: none;
 }
+#show{
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    border-style: hidden;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 30px
+}
