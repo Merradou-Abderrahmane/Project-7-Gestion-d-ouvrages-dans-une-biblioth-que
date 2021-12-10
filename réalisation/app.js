@@ -132,3 +132,8 @@ function validate() {
     }  
     return isValid;
 }
+
+function show(){
+
+    document.querySelector('#formSubmit').style.display = "flex";
+}
