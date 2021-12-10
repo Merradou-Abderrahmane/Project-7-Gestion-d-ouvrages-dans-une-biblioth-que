@@ -48,10 +48,7 @@
             <main>
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">Ouvrages</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Tableau de bord</a></li>
-                        <li class="breadcrumb-item active">Ouvrages</li>
-                    </ol>
+                    <button onclick="myFunction()">Try it</button>
                     <div class="card mb-4">
 
                         <div class="card-header">
@@ -60,7 +57,7 @@
                         <div class="card-body">
 
                             <form id="formSubmit"  class="row g-3">
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label for="inputTitle" class="form-label">Title</label>
                                     <input required type="text" class="form-control" id="inputTitle">
                                 </div>
@@ -77,7 +74,7 @@
                                     <input required type="date" class="form-control" id="inputDate"
                                         placeholder="Apartment, studio, or floor">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="inputLanguage" class="form-label">Langue</label>
                                     <select required id="inputLanguage" class="form-select">
                                         <option value="" disabled selected>choisir...</option>
