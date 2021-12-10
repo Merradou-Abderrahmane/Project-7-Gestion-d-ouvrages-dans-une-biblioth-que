@@ -6,11 +6,11 @@ event.preventDefault();
         if (selectedRow == null)
             insertNewRow(work);
         else
-        if (confirm("Êtes-vous sûr de modifier cette œuvre?"))
+        if (confirm("Êtes-vous sûr de modifier l'ouvrage?"))
             editRow(work)
         resetForm();
     } else {
-        alert("S'il-vous-plaît remplissez tous les champs requis")
+        alert("veuillez remplir tous les champs requis")
     }
 })
 
@@ -103,7 +103,7 @@ function editRow(workToEdit) {
 
 
 function onDelete(td) {
-    if (confirm("Êtes-vous sûr de supprimer cette œuvre?")) {
+    if (confirm("Êtes-vous sûr de supprimer l'ouvrage?")) {
         row = td.parentElement.parentElement;
         document.getElementById("worksTable").deleteRow(row.rowIndex)
     }
