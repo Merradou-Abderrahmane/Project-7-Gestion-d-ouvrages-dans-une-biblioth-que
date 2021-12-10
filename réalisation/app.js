@@ -3,16 +3,17 @@ document.getElementById("formSubmit").addEventListener("submit", function (event
 event.preventDefault();
     if (validate()) {
         var work = readwork();
-        if (selectedRow == null)
-            insertNewRow(work);
+        if (selectedRow == null){
+            insertNewRow(work); 
+        }
         else
         if (confirm("Êtes-vous sûr de modifier l'ouvrage?"))
             editRow(work)
         resetForm();
-    } else {
+    } else  {
         alert("veuillez remplir tous les champs requis")
     }
-
+   
 })
 
 function resetForm() {
@@ -72,6 +73,7 @@ function insertNewRow(work) {
 
     cell7.appendChild(editButton)
     cell7.appendChild(deleteButton)
+    
 
 }
 
@@ -88,7 +90,7 @@ function onEdit(td) {
         if (checkValue[i].value == selectedRow.cells[5].innerHTML) {
             checkValue[i].checked = true
         }
-    }
+    }show();
 }
 
 function editRow(workToEdit) {
@@ -100,8 +102,6 @@ function editRow(workToEdit) {
     selectedRow.cells[5].innerHTML = workToEdit.type;
 
 }
-
-
 
 function onDelete(td) {
     if (confirm("Êtes-vous sûr de supprimer l'ouvrage?")) {
@@ -135,12 +135,5 @@ function validate() {
 }
 
 function show(){
-
-    var button = document.getElementById("formSubmit");
-    if(button.style.display ="none"){
-
         document.querySelector("#formSubmit").style.display="flex";
     }
-
- 
-}
