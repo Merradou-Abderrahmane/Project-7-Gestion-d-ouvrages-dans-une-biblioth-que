@@ -12,6 +12,7 @@ event.preventDefault();
     } else {
         alert("veuillez remplir tous les champs requis")
     }
+
 })
 
 function resetForm() {
@@ -135,5 +136,11 @@ function validate() {
 
 function show(){
 
-    document.querySelector('#formSubmit').style.display = "flex";
+    var button = document.getElementById("formSubmit");
+    if(button.style.display ="none"){
+
+        document.querySelector("#formSubmit").style.display="flex";
+    }
+
+ 
 }
