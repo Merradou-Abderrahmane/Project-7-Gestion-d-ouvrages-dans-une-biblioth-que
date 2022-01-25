@@ -1,63 +1,44 @@
-var workManager = new WorkManager();
-var selectedRow = null;
-var rowId = null;
+var gestionOuvrage = new GestionOuvrage();
 
+var selectRow = null;
+var ouvrageId = null;
 
 document.getElementById("formSubmit").addEventListener("submit", function (event) {
     event.preventDefault();
-    var work = readwork();
-    workManager.addWork(work);
-
+    var ouvrage = readOuvrage();
+    gestionOuvrage.addOuvrage(ouvrage);
 
     insertNewRow();
 
     resetForm();
+     
 })
 
 function resetForm() {
     document.getElementById("inputTitle").value = "";
-    selectedRow = null;
+    selectRow = null;
 }
 
 
-function readwork() {
-    var work = new Work();
-
-    work.title = document.getElementById("inputTitle").value;
-    return work;
+function readOuvrage() {
+    var ouvrage = new Ouvrage();
+    
+    ouvrage.titre = document.getElementById("inputTitle").value;
+    return ouvrage;
 }
-
-
 
 function insertNewRow() {
-    var workList = workManager.getAllItems()
-    var tableBody = document.getElementById("worksTable").getElementsByTagName('tbody')[0];
-
-    while (tableBody.rows.length > 0) {
-        tableBody.deleteRow(0);
-    }
-
-
-    for (var i = 0; i < workList.length; i++) {
-        var newRow = tableBody.insertRow(tableBody.length);
-        newRow.insertCell(0).innerHTML = workList[i].id;
-        cell2 = newRow.insertCell(1);
-        cell2.innerHTML = workList[i].title;
-        cell3 = newRow.insertCell(2)
-
-
-        var editButton = document.createElement("button")
-        var deleteButton = document.createElement("button")
-
-        var editContent = document.createTextNode("Edit")
-        editButton.appendChild(editContent)
-        editButton.setAttribute('onclick', 'onEdit(this)')
-
-        var deleteContent = document.createTextNode('Delete')
-        deleteButton.appendChild(deleteContent)
-        deleteButton.setAttribute("onclick", 'onDelete(this)')
-
-        cell3.appendChild(editButton)
-        cell3.appendChild(deleteButton)
-    }
+    var List = gestionOuvrage.ouvrageList
+    var tableBody = document.getElementById("ouvrageTable").getElementsByTagName('tbody')[0];
+   while(tableBody.rows.length > 0){
+       tableBody.deleteRow(0);
+   }
+   for(var i = 0; i < List.length; i++){
+    var newRow = tableBody.insertRow(tableBody.length);
+    cell1 = newRow.insertCell(0)
+    cell1.innerHTML =List[i].id;
+    cell2 = newRow.insertCell(1);
+    cell2.innerHTML = List[i].titre;
+   }
+  
 }
