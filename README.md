@@ -1,6 +1,6 @@
-# Gestion-d'ouvrages-dans-une-bibliothèque-v1
+# Gestion-d'ouvrages-dans-une-bibliothèque
  
-🔴 live : 🔗https://merradou-abderrahmane.github.io/Project-7-Gestion-d-ouvrages-dans-une-biblioth-que-v1/src/index.html
+🔴 live : 🔗https://merradou-abderrahmane.github.io/Project-7-Gestion-d-ouvrages-dans-une-biblioth-que/src/index.html
 
 ## CRUD :white_check_mark:
 ## JS :white_check_mark:
