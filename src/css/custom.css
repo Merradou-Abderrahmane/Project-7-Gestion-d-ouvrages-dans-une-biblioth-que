@@ -63,15 +63,37 @@ a {
   }
 
   @media print {
-    @page {
+    /* @page {
       size: A4;
-      margin: 5cm;
-    }
-    body card-mb-4 {
+      margin: 30cm;
+    } */
+    /* body #card-mb-4 {
       display: block;
-    }
+    } */
     body h1 {
       display: block;
     }
+    #formCard{
+      display: none;
+    }
+    #print {
+      display: none;
+    }
+    #top-title{
+      display: none;
+    }
+    .mt-4{
+      display: none;
+    }
+    #showFormBtn {
+      display: none;
+    }
+    #actions{
+      display: none;
+    }
+    #worksTable{
+      display: block;
+    }
+
+
   }
-  

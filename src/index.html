@@ -14,7 +14,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand  ">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">📖Gestion d'ouvrages v2</a>
+        <a class="navbar-brand ps-3" id="top-title" href="index.html">📖Gestion d'ouvrages v2</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="card-body" id="card-body">
                             <table class="table" id="worksTable">
-                                <thead>
+                                <thead id="table-head">
                                     <tr>
                                         <th>ID</th>
                                         <th>Titre</th>
@@ -127,14 +127,14 @@
                                         <th class="d-none d-lg-table-cell">Date de publication</th>
                                         <th>Langue</th>
                                         <th class="d-none d-lg-table-cell">Type</th>
-                                        <th>Actions</th>
+                                        <th id="actions">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                 </tbody>
                             </table>
-                            <button class="btn-custom btn-secondary-custom-1" onclick="onPrint()">Print</button>
+                            <button class="btn-custom btn-secondary-custom-1" id="print"  onclick="window.print()">Print</button>
 
                         </div>
                     </div>
