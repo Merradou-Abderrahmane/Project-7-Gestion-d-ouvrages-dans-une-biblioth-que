@@ -150,10 +150,10 @@ function onDelete(buttonReference) {
 }
 
 
-// function onPrint() {
-//     var tab = document.getElementById('worksTable');
-//     // var win = window.open();
-//     win.document.write(tab.outerHTML);
-//     // win.document.close();
-//     window.print();
-// }
+function onPrint() {
+    var tab = document.getElementById('worksTable');
+    // var win = window.open();
+    document.write(tab.outerHTML);
+    // win.document.close();
+    window.print();
+}
